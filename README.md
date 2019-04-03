@@ -1,8 +1,10 @@
 # Cartographer for Racecar
 
+For the most up to date instructions, please refer to the [official google cartographer documentation](https://google-cartographer-ros.readthedocs.io/en/latest/).
+
 ## Cartographer
 
-If cartographer is not already installed on your car, [install cartographer](https://google-cartographer-ros.readthedocs.io/en/latest/):
+If cartographer is not already installed, [install cartographer](https://google-cartographer-ros.readthedocs.io/en/latest/):
 
     # Install ninja
     sudo apt-get install ninja-build
@@ -40,4 +42,4 @@ Clone this repo into your `cartographer_ws` and `catkin_make`
 
 Then run it via:
 
-    roslaunch cartographer_config
+    roslaunch cartographer_config cartographer.launch
