@@ -2,8 +2,6 @@
 
 For the most up to date instructions, please refer to the [official google cartographer documentation](https://google-cartographer-ros.readthedocs.io/en/latest/).
 
-## Cartographer
-
 If cartographer is not already installed, [install cartographer](https://google-cartographer-ros.readthedocs.io/en/latest/):
 
     # Install ninja
