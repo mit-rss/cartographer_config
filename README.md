@@ -32,12 +32,13 @@ Then add this to your ~/.bashrc
 
     source ~/cartographer_ws/install_isolated/setup.bash
 
-Clone this repo into your `cartographer_ws` and `catkin_make`
+Clone this repo into your `racecar_ws` and `catkin_make`
 
-    cd ~/cartographer_ws/src
+    cd ~/racecar_ws/src
     git clone https://github.com/mit-rss/cartographer_config.git
-    cd ~/cartographer_ws
-    catkin_make_isolated --install --use-ninja
+    cd ~/racecar_ws
+    catkin_make
+    source devel/setup.bash
 
 Then run it via:
 
