@@ -34,9 +34,10 @@ Then add this to your ~/.bashrc
 
 Clone this repo into your `cartographer_ws` and `catkin_make`
 
-    git clone https://github.com/mit-rss/cartographer_config.git ~/cartographer_ws/src/
+    cd ~/cartographer_ws/src
+    git clone https://github.com/mit-rss/cartographer_config.git
     cd ~/cartographer_ws
-    catkin_make
+    catkin_make_isolated --install --use-ninja
 
 Then run it via:
 
