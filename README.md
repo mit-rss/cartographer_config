@@ -41,6 +41,14 @@ Clone this repo into your `racecar_ws` (not your `cartographer_ws`!) and `catkin
     catkin_make
     source devel/setup.bash
 
-Then run it via:
+To run cartographer on the car, simply run:
 
     roslaunch cartographer_config cartographer.launch
+
+To run cartographer in the simulator first change the `broadcast_transform` parameter in the simulator's `params.yaml` file to `false:
+
+    broadcast_transform: false
+
+This prevents a clash between the ground truth transform published by the simulator and the estimated transform published by cartographer. Then run cartographer like this:
+
+    roslaunch cartographer_config cartographer_simulated.launch
