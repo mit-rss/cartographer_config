@@ -5,7 +5,7 @@ For the most up to date instructions, please refer to the [official google carto
 If cartographer is not already installed, [install cartographer](https://google-cartographer-ros.readthedocs.io/en/latest/):
 
     # Install ninja
-    sudo apt-get install ninja-build
+    sudo apt-get install ninja-build python-wstool python-rosdep
     
     # Make a workspace for cartographer
     mkdir ~/cartographer_ws
@@ -20,6 +20,7 @@ If cartographer is not already installed, [install cartographer](https://google-
     src/cartographer/scripts/install_proto3.sh
     
     # Install deb dependencies
+    sudo apt-get update
     sudo rosdep init
     rosdep update
     rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
@@ -32,7 +33,7 @@ Then add this to your ~/.bashrc
 
     source ~/cartographer_ws/install_isolated/setup.bash
 
-Clone this repo into your `racecar_ws` and `catkin_make`
+Clone this repo into your `racecar_ws` (not your `cartographer_ws`!) and `catkin_make`
 
     cd ~/racecar_ws/src
     git clone https://github.com/mit-rss/cartographer_config.git
