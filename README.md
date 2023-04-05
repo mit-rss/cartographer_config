@@ -2,6 +2,12 @@
 
 For the most up to date instructions, please refer to the [official google cartographer documentation](https://google-cartographer-ros.readthedocs.io/en/latest/).
 
+RSS 2023 Students use this ^^^ and read this note:
+
+If you get an error saying tf2-eigen not found or similar for a different library, use the command:
+sudo apt install ros-melodic-[library name]. In this case, ros-melodic-tf2-eigen
+
+
 If cartographer is not already installed, [install cartographer](https://google-cartographer-ros.readthedocs.io/en/latest/):
 
     # Install ninja
